@@ -1,46 +1,31 @@
 class Solution:
     def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
-        median_indices = []
-        median_values = []
-        total_len = (len(nums1) + len(nums2))
-        if total_len % 2 == 0:
-            median_indices.append(total_len//2 - 1)
-            median_indices.append(total_len//2)
-        else:
-            median_indices.append(total_len//2)
+        m, n = len(nums1), len(nums2)
+        p1, p2 = 0, 0
         
-        i = 0
-        j = 0
-        k = -1
-        sto = -1
-
-        while(i<len(nums1) and j<len(nums2)):
-            if nums1[i]<=nums2[j]:
-                sto = nums1[i]
-                i += 1
-                k += 1
+        # Get the smaller value between nums1[p1] and nums2[p2].
+        def get_min():
+            nonlocal p1, p2
+            if p1 < m and p2 < n:
+                if nums1[p1] < nums2[p2]:
+                    ans = nums1[p1]
+                    p1 += 1
+                else:
+                    ans = nums2[p2]
+                    p2 += 1
+            elif p2 == n:
+                ans = nums1[p1]
+                p1 += 1
             else:
-                sto = nums2[j]
-                j += 1
-                k += 1
-
-            if k in median_indices:
-                median_values.append(sto)
-
-        while(i<len(nums1)):
-            sto = nums1[i]
-            i += 1
-            k += 1
-
-            if k in median_indices:
-                median_values.append(sto)
-
-        while(j<len(nums2)):
-            sto = nums2[j]
-            j += 1
-            k += 1
-
-            if k in median_indices:
-                median_values.append(sto)
-
-        return sum(median_values)/len(median_values)
+                ans = nums2[p2]
+                p2 += 1
+            return ans
+        
+        if (m + n) % 2 == 0:
+            for _ in range((m + n) // 2 - 1):
+                _ = get_min()
+            return (get_min() + get_min()) / 2
+        else:
+            for _ in range((m + n) // 2):
+                _ = get_min()
+            return get_min()
