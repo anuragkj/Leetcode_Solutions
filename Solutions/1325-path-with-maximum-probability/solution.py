@@ -1,23 +1,22 @@
 class Solution:
     def maxProbability(self, n: int, edges: List[List[int]], succProb: List[float], start: int, end: int) -> float:
-        adj = collections.defaultdict(list)
-        for i in range(len(edges)):
-            src, dst = edges[i]
-            adj[src].append([dst, succProb[i]])
-            adj[dst].append([src, succProb[i]])
+        graph = defaultdict(list)
+        for i, (a, b) in enumerate(edges):
+            graph[a].append([b, succProb[i]])
+            graph[b].append([a, succProb[i]])
+            
+        max_prob = [0.0] * n    
+        max_prob[start] = 1.0
+        
+        queue = deque([start])
+        while queue:
+            cur_node = queue.popleft()
+            for nxt_node, path_prob in graph[cur_node]:
 
-        pq = [(-1, start)]
-        visit = set()
-
-        while pq:
-            prob, cur = heapq.heappop(pq)
-            visit.add(cur)
-
-            if cur == end:
-                return prob * -1
-
-            for nei, edgeProb in adj[cur]:
-                if nei not in visit:
-                    heapq.heappush(pq, (prob*edgeProb, nei))
-
-        return 0
+                # Only update max_prob[nxt_node] if the current path increases
+                # the probability of reach nxt_node.
+                if max_prob[cur_node] * path_prob > max_prob[nxt_node]:
+                    max_prob[nxt_node] = max_prob[cur_node] * path_prob
+                    queue.append(nxt_node)
+                    
+        return max_prob[end]
