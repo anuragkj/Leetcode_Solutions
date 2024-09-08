@@ -1,17 +1,31 @@
-class Solution(object):
-    def splitListToParts(self, root, k):
-        cur = root
-        for N in range(1001):
-            if not cur: break
-            cur = cur.next
-        width, remainder = divmod(N, k)
+class Solution:
+    def splitListToParts(
+        self, head: Optional[ListNode], k: int
+    ) -> List[Optional[ListNode]]:
+        ans = [None] * k
 
-        ans = []
-        cur = root
+        size = 0
+        current = head
+        while current is not None:
+            size += 1
+            current = current.next
+
+        split_size = size // k
+        num_remaining_parts = size % k
+
+        current = head
         for i in range(k):
-            head = write = ListNode(None)
-            for j in range(width + (i < remainder)):
-                write.next = write = ListNode(cur.val)
-                if cur: cur = cur.next
-            ans.append(head.next)
+            new_part = ListNode(0)
+            tail = new_part
+
+            current_size = split_size
+            if num_remaining_parts > 0:
+                num_remaining_parts -= 1
+                current_size += 1
+            for j in range(current_size):
+                tail.next = ListNode(current.val)
+                tail = tail.next
+                current = current.next
+            ans[i] = new_part.next
+
         return ans
