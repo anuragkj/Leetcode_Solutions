@@ -1,6 +1,5 @@
-class Solution(object):
-    def check(self, nums):
-
+class Solution:
+    def check(self, nums: List[int]) -> bool:
         n = len(nums)
         count = 1
 
@@ -11,6 +10,5 @@ class Solution(object):
                 count = 1
             if count == n:
                 return True
-                
-        return n == 1
 
+        return n == 1 # Handle edge case for single element
