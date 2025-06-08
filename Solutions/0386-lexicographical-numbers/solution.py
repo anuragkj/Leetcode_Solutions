@@ -17,4 +17,4 @@ class Solution:
             if next_number <= limit:
                 self._generate_lexical_numbers(next_number, limit, result)
             else:
-                break 
+                break
