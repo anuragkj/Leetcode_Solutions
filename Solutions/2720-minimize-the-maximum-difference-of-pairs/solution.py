@@ -1,33 +1,3 @@
-# TLE Error class Solution {
-# public:
-
-#     //DP solution (Giving Memory Limit Exceed)
-#      int solve(int i,vector<int>& nums, int p, vector<vector<int>> &dp){
-#      if(p==0)return 0;
-#          if(i>=nums.size()-1)return 1e9;
-#          if(dp[i][p]!=-1)
-#          return dp[i][p];
-
-#         int liya=0,nhiliya=0;
-#         if(i+1<nums.size())
-#          liya = max(abs(nums[i]-nums[i+1]),solve(i+2,nums,p-1,dp));
-            
-    
-#          nhiliya = solve(i+1,nums,p,dp);
-
-#              return dp[i][p] = min(liya,nhiliya);
-
-#          }
-#          int minimizeMax(vector<int>& nums, int p) {
-#              sort(nums.begin(),nums.end());
-       
-#             int n = nums.size();
-#             vector<vector<int>> dp(n,vector<int>(p+1,-1));
-
-#             return solve(0,nums,p,dp);
-#          }
-
-
 class Solution:
     def minimizeMax(self, nums: List[int], p: int) -> int:
         nums.sort()
