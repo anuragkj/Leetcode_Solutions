@@ -1,20 +1,18 @@
 class Solution:
     def makeFancyString(self, s: str) -> str:
-        last_term = ''
-        max_len = 0
-        ans = ''
-        for i in s:
-            if i != last_term:
-                if max_len > 1:
-                    ans += 2*last_term
-                else:
-                    ans += last_term
-                max_len = 1
-                last_term = i
+
+        prev = s[0]
+        frequency = 1
+        ans = s[0]
+
+        for i in range(1, len(s)):
+            if s[i] == prev:
+                frequency += 1
             else:
-                max_len += 1
-        if max_len > 1:
-            ans += 2*last_term
-        else:
-            ans += last_term
+                prev = s[i]
+                frequency = 1
+
+            if frequency < 3:
+                ans += s[i]
+
         return ans
