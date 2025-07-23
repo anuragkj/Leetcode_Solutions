@@ -1,43 +1,61 @@
 class Solution:
+    def clear(self, st):
+        st.clear()
+
     def maximumGain(self, s: str, x: int, y: int) -> int:
-        total_score = 0
-        high_priority_pair = "ab" if x > y else "ba"
-        low_priority_pair = "ba" if high_priority_pair == "ab" else "ab"
+        ans = 0
+        n = len(s)
 
-        # First pass: remove high priority pair
-        string_after_first_pass = self.remove_substring(s, high_priority_pair)
-        removed_pairs_count = (len(s) - len(string_after_first_pass)) // 2
+        if y > x:
+            st = []
+            vis = [False] * n
 
-        # Calculate score from first pass
-        total_score += removed_pairs_count * max(x, y)
+            # Prioritize "ba"
+            for i in range(n):
+                if st and st[-1][0] == 'b' and s[i] == 'a':
+                    vis[i] = True
+                    vis[st[-1][1]] = True
+                    st.pop()
+                    ans += y
+                else:
+                    st.append((s[i], i))
 
-        # Second pass: remove low priority pair
-        string_after_second_pass = self.remove_substring(
-            string_after_first_pass, low_priority_pair
-        )
-        removed_pairs_count = (
-            len(string_after_first_pass) - len(string_after_second_pass)
-        ) // 2
+            self.clear(st)
 
-        # Calculate score from second pass
-        total_score += removed_pairs_count * min(x, y)
+            # Process "ab"
+            for i in range(n):
+                if vis[i]:
+                    continue
+                if st and st[-1][0] == 'a' and s[i] == 'b':
+                    st.pop()
+                    ans += x
+                else:
+                    st.append((s[i], i))
 
-        return total_score
+        else:
+            st = []
+            vis = [False] * n
 
-    def remove_substring(self, input: str, target_pair: str) -> str:
-        char_stack = []
+            # Prioritize "ab"
+            for i in range(n):
+                if st and st[-1][0] == 'a' and s[i] == 'b':
+                    vis[i] = True
+                    vis[st[-1][1]] = True
+                    st.pop()
+                    ans += x
+                else:
+                    st.append((s[i], i))
 
-        # Iterate through each character in the input string
-        for current_char in input:
-            # Check if current character forms the target pair with the top of the stack
-            if (
-                current_char == target_pair[1]
-                and char_stack
-                and char_stack[-1] == target_pair[0]
-            ):
-                char_stack.pop()  # Remove the matching character from the stack
-            else:
-                char_stack.append(current_char)
+            self.clear(st)
 
-        # Reconstruct the remaining string after removing target pairs
-        return "".join(char_stack)
+            # Process "ba"
+            for i in range(n):
+                if vis[i]:
+                    continue
+                if st and st[-1][0] == 'b' and s[i] == 'a':
+                    st.pop()
+                    ans += y
+                else:
+                    st.append((s[i], i))
+
+        return ans
