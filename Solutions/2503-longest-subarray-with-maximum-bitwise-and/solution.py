@@ -1,15 +1,12 @@
-class Solution:
-    def longestSubarray(self, nums: List[int]) -> int:
-        max_val = ans = current_streak = 0
+class Solution(object):
+    def longestSubarray(self, nums):
+        ans, cnt = 0, 0
+        
+        max_element = max(nums)
         for num in nums:
-            if max_val < num:
-                max_val = num
-                ans = current_streak = 0
-
-            if max_val == num:
-                current_streak += 1
+            if num == max_element:
+                cnt += 1
             else:
-                current_streak = 0
-
-            ans = max(ans, current_streak)
+                cnt = 0
+            ans = max(ans, cnt)
         return ans
