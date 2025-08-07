@@ -8,33 +8,14 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
-      - name: Sync Leetcode Solutions with Retry
-        uses: github-action-retry/retry@v3
+    steps:
+      - name: Sync
+        uses: joshcai/leetcode-sync@v1.7
         with:
-          # The maximum number of attempts for the sync step.
-          max_attempts: 5
-          # Delay between retries in milliseconds (e.g., 30 seconds).
-          retry_delay: 30000
-          # The action we want to execute and retry on failure.
-          action: joshcai/leetcode-sync@v1.7
-          # The inputs for the 'joshcai/leetcode-sync' action,
-          # passed as a multi-line JSON string.
-          action_with: >-
-            ${{ toJSON(
-              {
-                "github-token": github.token,
-                "leetcode-csrf-token": secrets.LEETCODE_CSRF_TOKEN,
-                "leetcode-session": secrets.LEETCODE_SESSION,
-                "destination-folder": "Solutions",
-                "verbose": "true",
-                "commit-header": "[LeetCode Sync]"
-              }
-            ) }}
+          github-token: ${{ github.token }}
+          leetcode-csrf-token: ${{ secrets.LEETCODE_CSRF_TOKEN }}
+          leetcode-session: ${{ secrets.LEETCODE_SESSION }}
+          destination-folder: Solutions
+          verbose: true
+          commit-header: "[LeetCode Sync]"
