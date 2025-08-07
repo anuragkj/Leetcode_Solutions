@@ -14,26 +14,27 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          # Fetches all history for all branches and tags.
-          # This is recommended for actions that perform Git operations.
           fetch-depth: 0
 
       - name: Sync Leetcode Solutions with Retry
-        uses: nick-invision/retry@v3
+        uses: github-action-retry/retry@v3
         with:
           # The maximum number of attempts for the sync step.
           max_attempts: 5
-          # The delay between retry attempts in milliseconds.
-          # 30 seconds gives the Git remote time to process the previous commit.
+          # Delay between retries in milliseconds (e.g., 30 seconds).
           retry_delay: 30000
-          # The command to execute, which is the leetcode-sync action.
-          # Note: The syntax for passing inputs to the wrapped action is specific.
-          command: |
-            uses: joshcai/leetcode-sync@v1.7
-            with:
-              github-token: ${{ secrets.GITHUB_TOKEN }}
-              leetcode-csrf-token: ${{ secrets.LEETCODE_CSRF_TOKEN }}
-              leetcode-session: ${{ secrets.LEETCODE_SESSION }}
-              destination-folder: Solutions
-              verbose: true
-              commit-header: "[LeetCode Sync]"
+          # The action we want to execute and retry on failure.
+          action: joshcai/leetcode-sync@v1.7
+          # The inputs for the 'joshcai/leetcode-sync' action,
+          # passed as a multi-line JSON string.
+          action_with: >-
+            ${{ toJSON(
+              {
+                "github-token": github.token,
+                "leetcode-csrf-token": secrets.LEETCODE_CSRF_TOKEN,
+                "leetcode-session": secrets.LEETCODE_SESSION,
+                "destination-folder": "Solutions",
+                "verbose": "true",
+                "commit-header": "[LeetCode Sync]"
+              }
+            ) }}
