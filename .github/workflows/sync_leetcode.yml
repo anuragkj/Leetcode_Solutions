@@ -11,21 +11,29 @@ jobs:
     permissions:
       contents: write
     steps:
-      # Step 1: Check out the repository first.
-      # This ensures the runner has the latest version of the repo.
       - name: Checkout repository
-        uses: actions/checkout@v4 # Use the official checkout action
-
-      # Step 2: Run the sync action.
-      # It will now operate on the checked-out code.
-      - name: Sync Leetcode Solutions
-        uses: joshcai/leetcode-sync@v1.7
-        # continue-on-error is still a good safety net
-        continue-on-error: true
+        uses: actions/checkout@v4
         with:
-          github-token: ${{ github.token }}
-          leetcode-csrf-token: ${{ secrets.LEETCODE_CSRF_TOKEN }}
-          leetcode-session: ${{ secrets.LEETCODE_SESSION }}
-          destination-folder: Solutions
-          verbose: true
-          commit-header: "[LeetCode Sync]"
+          # Fetches all history for all branches and tags.
+          # This is recommended for actions that perform Git operations.
+          fetch-depth: 0
+
+      - name: Sync Leetcode Solutions with Retry
+        uses: nick-invision/retry@v3
+        with:
+          # The maximum number of attempts for the sync step.
+          max_attempts: 5
+          # The delay between retry attempts in milliseconds.
+          # 30 seconds gives the Git remote time to process the previous commit.
+          retry_delay: 30000
+          # The command to execute, which is the leetcode-sync action.
+          # Note: The syntax for passing inputs to the wrapped action is specific.
+          command: |
+            uses: joshcai/leetcode-sync@v1.7
+            with:
+              github-token: ${{ secrets.GITHUB_TOKEN }}
+              leetcode-csrf-token: ${{ secrets.LEETCODE_CSRF_TOKEN }}
+              leetcode-session: ${{ secrets.LEETCODE_SESSION }}
+              destination-folder: Solutions
+              verbose: true
+              commit-header: "[LeetCode Sync]"
