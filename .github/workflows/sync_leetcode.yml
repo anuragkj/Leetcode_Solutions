@@ -13,6 +13,7 @@ jobs:
     steps:
       - name: Sync
         uses: joshcai/leetcode-sync@v1.7
+        continue-on-error: true
         with:
           github-token: ${{ github.token }}
           leetcode-csrf-token: ${{ secrets.LEETCODE_CSRF_TOKEN }}
