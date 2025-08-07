@@ -11,8 +11,16 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Sync
+      # Step 1: Check out the repository first.
+      # This ensures the runner has the latest version of the repo.
+      - name: Checkout repository
+        uses: actions/checkout@v4 # Use the official checkout action
+
+      # Step 2: Run the sync action.
+      # It will now operate on the checked-out code.
+      - name: Sync Leetcode Solutions
         uses: joshcai/leetcode-sync@v1.7
+        # continue-on-error is still a good safety net
         continue-on-error: true
         with:
           github-token: ${{ github.token }}
