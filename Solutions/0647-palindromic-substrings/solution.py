@@ -1,22 +1,15 @@
 class Solution:
     def countSubstrings(self, s: str) -> int:
-        n = len(s)  
-        memo = [[0 for _ in range(n)] for _ in range(n)]  
-        res = 0  
-        
-        for i in range(n):  
-            memo[i][i] = 1  
-            res += 1  
-        
-        for i in range(n - 1):  
-            if s[i] == s[i + 1]:  
-                memo[i][i + 1] = 1  
-                res += 1  
-        
-        for i in range(2, n):  
-            for j in range(n - i):  
-                if s[j] == s[i + j] and memo[j + 1][i + j - 1] == 1:  
-                    memo[j][i + j] = 1  
-                    res += 1  
-        
-        return res  
+        def countpali(left, right):
+            if left < 0 or right >= len(s):
+                return 0
+            if s[left] == s[right]:
+                return 1 + countpali(left - 1, right + 1)
+            return 0
+
+        ret = 0
+        for i in range(len(s)):
+            countodd = countpali(i-1, i+1)
+            counteven = countpali(i, i+1)
+            ret += countodd + counteven
+        return len(s)+ret
