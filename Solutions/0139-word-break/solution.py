@@ -1,29 +1,20 @@
-# class Solution:
-#     def wordBreak(self, s: str, wordDict: List[str]) -> bool:
-
-#         def rec(suffix):
-#             if suffix == "":
-#                 return True
-            
-#             ret = False
-#             for i in wordDict:
-#                 if suffix.startswith(i):
-#                     ret = ret or rec(suffix[len(i) : ])
-#             return ret
-
-#         return rec(s)
-
 class Solution:
     def wordBreak(self, s: str, wordDict: List[str]) -> bool:
-        @cache
-        def dp(i):
-            if i < 0: 
-                return True
+        memo = {}
 
-            for word in wordDict:
-                if s[i - len(word) + 1:i + 1] == word and dp(i - len(word)):
-                    return True
+        def dfs(i):
+            if i in memo:
+                return memo[i]
+            if i == len(s):
+                return True
             
-            return False
+            ret = False
+            for word in wordDict:
+                wordlen = len(word)
+                if i + wordlen <= len(s) and s[i:i+wordlen] == word:
+                    ret = ret or dfs(i+wordlen)
+
+            memo[i] = ret
+            return ret
         
-        return dp(len(s) - 1)
+        return dfs(0)
