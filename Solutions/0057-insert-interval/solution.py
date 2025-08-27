@@ -1,9 +1,11 @@
 class Solution:
-    def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
+    def insert(
+        self, intervals: List[List[int]], newInterval: List[int]
+    ) -> List[List[int]]:
         # If the intervals vector is empty, return a vector containing the newInterval
         if not intervals:
             return [newInterval]
-        
+
         n = len(intervals)
         target = newInterval[0]
         left, right = 0, n - 1
