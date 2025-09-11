@@ -1,14 +1,26 @@
-import heapq
 class Solution:
     def sortVowels(self, s: str) -> str:
-        l = list(s)
-        res = []
-        heapq.heapify(res)
-        for i in l:
-            if i in 'aeiouAEIOU':
-                heapq.heappush(res, i)
+        vowels = []
+
+        s_list = list(s)
+
+        # collect all vowels
+        for i in s_list:
+            if i in "AEIOUaeiou":
+                vowels.append(i)
         
-        for i in range(len(l)):
-            if l[i] in 'aeiouAEIOU':
-                l[i] = heapq.heappop(res)
-        return ''.join(l)
+        if vowels == []:
+            return s
+
+        # sort the vowels
+        vowels.sort()
+
+        count = 0
+
+        # replace original vowels with sorted ones
+        for j in range(len(s)):
+            if s_list[j] in "AEIOUaeiou":
+                s_list[j] = vowels[count]
+                count += 1
+
+        return "".join(s_list)
