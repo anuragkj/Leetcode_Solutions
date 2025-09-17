@@ -6,7 +6,7 @@ class Food:
         self.food_name = food_name
 
     def __lt__(self, other):
-        # Overload the less than operator for comparison.
+        # Overload the less-than operator for comparison.
         # If food ratings are the same, sort based on their name (lexicographically smaller name food will be on top).
         if self.food_rating == other.food_rating:
             return self.food_name < other.food_name
@@ -19,7 +19,7 @@ class FoodRatings:
         self.food_rating_map = {}
         # Map food with the cuisine it belongs to.
         self.food_cuisine_map = {}
-        # Store all food of a cuisine in a priority queue (to sort them on ratings/name).
+        # Store all food of cuisine in a priority queue (to sort them on ratings/name).
         # Priority queue element -> Food: (food_rating, food_name)
         self.cuisine_food_map = defaultdict(list)
 
