@@ -1,33 +1,30 @@
 class Solution:
     def exist(self, board: List[List[str]], word: str) -> bool:
+    
         rows, cols = len(board), len(board[0])
+        # visited = set()
 
-        def dfs(i, j, word_so_far, visited):
-            if (i, j) in visited:
-                return False
-            if not (0 <= i < rows and 0 <= j < cols):
-                return False
-            if board[i][j] != word[len(word_so_far)]:
-                return False
-
-            word_so_far += board[i][j]
-            if word_so_far == word:
+        def dfs(r, c, k, visited):
+            if k == len(word):
                 return True
 
-            visited.add((i, j))
-            dirs = [(0, 1), (0, -1), (1, 0), (-1, 0)]
-            for dir_x, dir_y in dirs:
-                new_i, new_j = i + dir_x, j + dir_y
-                if dfs(new_i, new_j, word_so_far, visited):
-                    return True
-            visited.remove((i, j))  # backtrack
-
-            return False
-
-        for i in range(rows):
-            for j in range(cols):
-                if board[i][j] == word[0]:  # start DFS only from matching first char
-                    if dfs(i, j, "", set()):
-                        return True
+            if not (0 <= r < rows) or not (0 <= c < cols) or (r,c) in visited or board[r][c] != word[k]:
+                return False
+            
+            visited.add((r,c))
+            res = dfs(r+1, c, k+1, visited) or dfs(r-1, c, k+1, visited) or dfs(r, c+1, k+1, visited) or dfs(r, c-1, k+1, visited)
+            visited.remove((r,c))
+            return res
+             
+        count = {}
+        for c in word:
+            count[c] = 1 + count.get(c, 0)
+        
+        if count[word[0]] > count[word[-1]]:
+            word = word[::-1]
+        
+        for r in range(rows):
+            for c in range(cols):
+                if dfs(r, c, 0, set()): return True
+        
         return False
-
