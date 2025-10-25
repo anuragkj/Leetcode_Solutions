@@ -1,11 +1,13 @@
 class Solution:
     def totalMoney(self, n: int) -> int:
-        total = 0
-        complete_week = n // 7
-        remaining_days = n % 7
+        ans = 0
+        monday = 1
+        
+        while n > 0:
+            for day in range(min(n, 7)):
+                ans += monday + day
+            
+            n -= 7
+            monday += 1
 
-        total += (28 * complete_week) + (7 * (complete_week - 1) * complete_week // 2) 
-
-        total += (complete_week + 1 + complete_week + remaining_days) * remaining_days // 2
-
-        return total
+        return ans
