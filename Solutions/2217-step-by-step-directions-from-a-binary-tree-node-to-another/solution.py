@@ -1,91 +1,51 @@
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
 class Solution:
-    def getDirections(
-        self, root: TreeNode, startValue: int, destValue: int
-    ) -> str:
-        # Map to store parent nodes
-        parent_map = {}
+    def getDirections(self, root: Optional[TreeNode], startValue: int, destValue: int) -> str:
+        def _getlca(node, n1, n2):
+            if node is None or node == n1 or node == n2:
+                return node
+            left = _getlca(node.left,n1,n2)
+            right = _getlca(node.right,n1,n2)
 
-        # Find the start node and populate parent map
-        start_node = self._find_start_node(root, startValue)
-        self._populate_parent_map(root, parent_map)
+            if left and right:
+                return node
+            return left or right
 
-        # Perform BFS to find the path
-        q = deque([start_node])
-        visited_nodes = set()
-        # Key: next node, Value: <current node, direction>
-        path_tracker = {}
-        visited_nodes.add(start_node)
+        def _getnode(node, value):
+            if node is None or node.val == value:
+                return node
+            return _getnode(node.left, value) or _getnode(node.right, value)
+        
+        def _getdir(node, tonode):
+            if node == tonode:
+                return ''
+            queue = deque()
+            queue.append((node, ''))
 
-        while q:
-            current_element = q.popleft()
+            while queue:
+                n, path = queue.popleft()
+                if n == tonode:
+                    return path
+                if n.left:
+                    queue.append((n.left, path+'L'))
+                if n.right:
+                    queue.append((n.right, path+'R'))
+            
+            return None           
 
-            # If destination is reached, return the path
-            if current_element.val == destValue:
-                return self._backtrack_path(current_element, path_tracker)
 
-            # Check and add parent node
-            if current_element.val in parent_map:
-                parent_node = parent_map[current_element.val]
-                if parent_node not in visited_nodes:
-                    q.append(parent_node)
-                    path_tracker[parent_node] = (current_element, "U")
-                    visited_nodes.add(parent_node)
+        startnode = _getnode(root, startValue)
+        endnode = _getnode(root, destValue)
+        lca = _getlca(root, startnode, endnode)
+        path_lca_to_start = _getdir(lca, startnode)
+        path_lca_to_end = _getdir(lca, endnode)
+        path_start_to_lca = 'U'*len(path_lca_to_start)
+        return path_start_to_lca+path_lca_to_end
 
-            # Check and add left child
-            if (
-                current_element.left
-                and current_element.left not in visited_nodes
-            ):
-                q.append(current_element.left)
-                path_tracker[current_element.left] = (current_element, "L")
-                visited_nodes.add(current_element.left)
 
-            # Check and add right child
-            if (
-                current_element.right
-                and current_element.right not in visited_nodes
-            ):
-                q.append(current_element.right)
-                path_tracker[current_element.right] = (current_element, "R")
-                visited_nodes.add(current_element.right)
-
-        # This line should never be reached if the tree is valid
-        return ""
-
-    def _backtrack_path(self, node, path_tracker):
-        path = []
-        # Construct the path
-        while node in path_tracker:
-            # Add the directions in reverse order and move on to the previous node
-            path.append(path_tracker[node][1])
-            node = path_tracker[node][0]
-        path.reverse()
-        return "".join(path)
-
-    def _populate_parent_map(self, node, parent_map):
-        if not node:
-            return
-
-        # Add children to the map and recurse further
-        if node.left:
-            parent_map[node.left.val] = node
-            self._populate_parent_map(node.left, parent_map)
-
-        if node.right:
-            parent_map[node.right.val] = node
-            self._populate_parent_map(node.right, parent_map)
-
-    def _find_start_node(self, node, start_value):
-        if not node:
-            return None
-
-        if node.val == start_value:
-            return node
-
-        left_result = self._find_start_node(node.left, start_value)
-
-        # If left subtree returns a node, it must be StartNode. Return it
-        # Otherwise, return whatever is returned by right subtree.
-        if left_result:
-            return left_result
-        return self._find_start_node(node.right, start_value)
+        
