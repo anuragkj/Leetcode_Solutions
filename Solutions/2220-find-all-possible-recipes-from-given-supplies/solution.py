@@ -1,25 +1,23 @@
+from collections import defaultdict, deque
 class Solution:
     def findAllRecipes(self, recipes: List[str], ingredients: List[List[str]], supplies: List[str]) -> List[str]:
-        
-        supplies = set(supplies)
-        recipes = dict(zip(recipes, ingredients))
-        made = []
-        
-        # basically check if we can keep making new stuff
-        # add to new list of supplies and delete recipe (to not recheck)
-        while True:
-            # track whether we made progress this iteration
-            new_recipe_made = False
-            for rcp, igs in [*recipes.items()]:
-                if not all(i in supplies for i in igs):
-                    # can't be made (with current supplies)
-                    continue
-                made.append(rcp)
-                supplies.add(rcp)
-                del recipes[rcp]
-                new_recipe_made = True
+        adj_matrix = defaultdict(list)
+        out_count = defaultdict(int)
 
-            if not new_recipe_made: 
-                # we obvs. won't make anything new
-                break
-        return made
+        for i in range(len(recipes)):
+            for j in ingredients[i]:
+                adj_matrix[j].append(recipes[i])
+                out_count[recipes[i]] += 1
+
+        ret = []
+        available = deque()
+        available.extend(supplies)
+        while available:
+            sup = available.pop()
+            for rec in adj_matrix[sup]:
+                out_count[rec] -= 1
+                if out_count[rec] == 0:
+                    ret.append(rec)
+                    available.append(rec)
+        return ret
+        
