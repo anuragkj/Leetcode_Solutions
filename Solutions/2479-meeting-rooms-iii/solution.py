@@ -1,22 +1,30 @@
 class Solution:
     def mostBooked(self, n: int, meetings: List[List[int]]) -> int:
-        room_availability_time = [0] * n
-        meeting_count = [0] * n
-        for start, end in sorted(meetings):
-            min_room_availability_time = inf
-            min_available_time_room = 0
-            found_unused_room = False
-            for i in range(n):
-                if room_availability_time[i] <= start:
-                    found_unused_room = True
-                    meeting_count[i] += 1
-                    room_availability_time[i] = end
-                    break
-                if min_room_availability_time > room_availability_time[i]:
-                    min_room_availability_time = room_availability_time[i]
-                    min_available_time_room = i
-            if not found_unused_room:
-                room_availability_time[min_available_time_room] += end - start
-                meeting_count[min_available_time_room] += 1
+        meetings.sort(key = lambda x: x[0])
+        current_meets = [] #(end_time, room_num)
+        free_rooms = [i for i in range(n)]
+        heapq.heapify(free_rooms)
 
-        return meeting_count.index(max(meeting_count))
+        count = [0]*n
+
+        for arrival, end in meetings:
+            while current_meets and current_meets[0][0] <= arrival:
+                _, freed_room = heapq.heappop(current_meets)
+                heapq.heappush(free_rooms, freed_room)
+
+            if free_rooms:
+                available_room = heapq.heappop(free_rooms)
+                heapq.heappush(current_meets,(end,available_room))
+                count[available_room] += 1
+            else:
+                first_free_time, first_avail_room = heapq.heappop(current_meets)
+                heapq.heappush(current_meets,(first_free_time + (end - arrival),first_avail_room))
+                count[first_avail_room] += 1
+
+        max_count = max(count)
+        ret = count.index(max_count)
+        return ret
+
+
+
+        
