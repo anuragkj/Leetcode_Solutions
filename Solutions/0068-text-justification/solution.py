@@ -1,15 +1,12 @@
 class Solution:
-    def fullJustify(self, words, maxWidth):
-        result, cur, num_of_letters = [], [], 0
+    def fullJustify(self, words: List[str], maxWidth: int) -> List[str]:
+        res, line, width = [], [], 0
 
-        for word in words:
-            if num_of_letters + len(word) + len(cur) > maxWidth:
-                for i in range(maxWidth - num_of_letters):
-                    cur[i % (len(cur) - 1 or 1)] += ' '
-                result.append(''.join(cur))
-                cur, num_of_letters = [], 0
+        for w in words:
+            if width + len(w) + len(line) > maxWidth:
+                for i in range(maxWidth - width): line[i % (len(line) - 1 or 1)] += ' '
+                res, line, width = res + [''.join(line)], [], 0
+            line += [w]
+            width += len(w)
 
-            cur += [word]
-            num_of_letters += len(word)
-
-        return result + [' '.join(cur).ljust(maxWidth)]
+        return res + [' '.join(line).ljust(maxWidth)]
