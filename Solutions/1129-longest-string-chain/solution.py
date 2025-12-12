@@ -1,35 +1,42 @@
+from collections import defaultdict
 class Solution:
-    def __init__(self):
-        self.chain_lengths = {}
-        self.word_set = {}
-
-    def calculate_chain_length(self, word) -> int:
-        # If the word doesn't exist in the set
-        if word not in self.word_set or not self.word_set[word]:
-            return 0
-
-        # If chain length for the word is already calculated
-        if word in self.chain_lengths:
-            return self.chain_lengths[word]
-
-        chain_length = 1
-
-        # Try removing one character at a time from the word and calculate chain length
-        for i in range(len(word)):
-            new_word = word[:i] + word[i + 1:]
-            chain_length = max(chain_length, 1 + self.calculate_chain_length(new_word))
-
-        self.chain_lengths[word] = chain_length
-        return chain_length
-
-    def longestStrChain(self, words) -> int:
+    def longestStrChain(self, words: List[str]) -> int:
+        len_dict = defaultdict(list)
         for word in words:
-            self.word_set[word] = True
+            len_dict[len(word)].append(word)
 
-        max_chain_length = -1
+        memo = {}
 
-        # Calculate the maximum chain length for each word
+        def chain(w1, w2):
+            l1 = 0
+            l2 = 0
+            diff = 0
+            while l1<len(w1) and l2<len(w2):
+                if w1[l1] == w2[l2]:
+                    l1+=1
+                    l2+=1
+                elif diff < 1:
+                    l2+=1
+                    diff+=1
+                else:
+                    return False
+
+            return True
+
+        def dfs(word):
+            max_word_len = 1
+            if word in memo:
+                return memo[word]
+            
+            for next_word in len_dict[len(word)+1]:
+                if chain(word, next_word):
+                    max_word_len = max(max_word_len, 1+dfs(next_word))
+
+            memo[word] = max_word_len
+            return max_word_len
+
+        words.sort(key = lambda x: len(x))
+        ret = 0
         for word in words:
-            max_chain_length = max(max_chain_length, self.calculate_chain_length(word))
-
-        return max_chain_length
+            ret = max(ret, dfs(word))
+        return ret
