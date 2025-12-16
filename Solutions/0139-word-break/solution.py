@@ -1,20 +1,13 @@
 class Solution:
     def wordBreak(self, s: str, wordDict: List[str]) -> bool:
-        memo = {}
-
+        @cache
         def dfs(i):
-            if i in memo:
-                return memo[i]
             if i == len(s):
                 return True
-            
             ret = False
             for word in wordDict:
-                wordlen = len(word)
-                if i + wordlen <= len(s) and s[i:i+wordlen] == word:
-                    ret = ret or dfs(i+wordlen)
-
-            memo[i] = ret
+                if s[i:].startswith(word):
+                    ret = ret or dfs(i+len(word))
             return ret
         
         return dfs(0)
