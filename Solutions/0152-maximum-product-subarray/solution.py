@@ -1,12 +1,14 @@
 class Solution:
     def maxProduct(self, nums: List[int]) -> int:
-        dp_max = [nums[0]] + [-1]*(len(nums)-1)
-        dp_min =[nums[0]] + [-1]*(len(nums)-1)
-
-        for i in range(1, len(nums)):
-            dp_max[i] = max(nums[i], dp_max[i-1]*nums[i], dp_min[i-1]*nums[i])
-            dp_min[i] = min(nums[i], dp_max[i-1]*nums[i], dp_min[i-1]*nums[i])
-
-        return max(dp_max)
-            
-        
+        self.memo = {}
+        def dfs(i, currentProduct):
+            key = (i, currentProduct)
+            if (key in self.memo):
+                return self.memo[key]
+            if (i >= len(nums)):
+                return currentProduct
+			# 3 choices, Include the current number in the product, start a new product, or end the product
+            ans = max(dfs(i + 1, currentProduct * nums[i]), dfs(i + 1, nums[i]), currentProduct)
+            self.memo[key] = ans
+            return ans
+        return dfs(1, nums[0])
