@@ -1,12 +1,13 @@
-from collections import defaultdict
-from typing import List
-
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        groups = defaultdict(list)
-
-        for word in strs:
-            key = "".join(sorted(word))
-            groups[key].append(word)
-
-        return list(groups.values())
+        def strtotuple(s):
+            alp = [0]*26
+            for i in s:
+                alp[ord(i)-ord('a')] += 1
+            return tuple(alp)
+        
+        dic = defaultdict(list)
+        for st in strs:
+            k = strtotuple(st)
+            dic[k].append(st)
+        return list(dic.values())
