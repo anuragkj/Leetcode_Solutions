@@ -1,30 +1,26 @@
 class Solution:
     def exist(self, board: List[List[str]], word: str) -> bool:
-    
-        rows, cols = len(board), len(board[0])
-        # visited = set()
-
-        def dfs(r, c, k, visited):
-            if k == len(word):
+        rows = len(board)
+        cols = len(board[0])
+        def dfs(i,j,ptr,visited):
+            if i >= rows or i < 0 or j>= cols or j <0 or board[i][j]!=word[ptr] or (i,j) in visited:
+                return False 
+            if ptr == len(word) - 1:
                 return True
-
-            if not (0 <= r < rows) or not (0 <= c < cols) or (r,c) in visited or board[r][c] != word[k]:
-                return False
+            dirs = ((0,1),(1,0),(-1,0),(0,-1))
+            ret = False
+            visited.add((i,j))
+            for dx,dy in dirs:
+                x = i+dx
+                y = j+dy
+                    
+                ret = ret or dfs(x,y,ptr+1,visited)
             
-            visited.add((r,c))
-            res = dfs(r+1, c, k+1, visited) or dfs(r-1, c, k+1, visited) or dfs(r, c+1, k+1, visited) or dfs(r, c-1, k+1, visited)
-            visited.remove((r,c))
-            return res
-             
-        count = {}
-        for c in word:
-            count[c] = 1 + count.get(c, 0)
-        
-        if count[word[0]] > count[word[-1]]:
-            word = word[::-1]
-        
-        for r in range(rows):
-            for c in range(cols):
-                if dfs(r, c, 0, set()): return True
-        
-        return False
+            visited.remove((i,j))
+            return ret
+        visit = set()
+        ret = False
+        for i in range(rows):
+            for j in range(cols):
+                ret = ret or dfs(i,j,0,visit)
+        return ret
