@@ -1,25 +1,18 @@
-from collections import deque
-
 class Solution:
-    def dailyTemperatures(self, temperatures):
-        deq = deque()
-        res = [0] * len(temperatures)
+    def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
+        mono = deque()
 
-        for i in range(len(temperatures) - 1, -1, -1):
-            if not deq:
-                deq.appendleft(i)
-                res[i] = 0
+        ret = []
+
+        for i in range(len(temperatures)-1,-1,-1):
+            while mono and temperatures[i] >= mono[-1][0]:
+                mono.pop()
+
+            if len(mono)>0:
+                ret.append(mono[-1][1]-i)
             else:
-                while deq and temperatures[i] >= temperatures[deq[0]]:
-                    deq.popleft()
+                ret.append(0)
+            
+            mono.append([temperatures[i],i])
 
-                if not deq:
-                    res[i] = 0
-                else:
-                    res[i] = deq[0] - i
-
-                deq.appendleft(i)
-
-        return res
-
-
+        return ret[::-1]
