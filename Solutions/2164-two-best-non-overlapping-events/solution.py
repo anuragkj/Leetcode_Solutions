@@ -1,24 +1,27 @@
 class Solution:
-    def maxTwoEvents(self, events: List[List[int]]) -> int:
-        event = []       # store (time, load/unload, value)
+    def maxTwoEvents(self, events):
+        events.sort()
+        dp = [[-1] * 3 for _ in range(len(events))]
+        return self.find_events(events, 0, 0, dp)
 
-        for start, end, value in events:
-            event += [(start, 1, value)]
-            event += [(end + 1, -1, value)]
-
-        # sort based on the time increasingly
-        event = sorted(event)
-
-        res = 0            # the maximum aggregation we can build so far
-        max_value = 0      # the maximum value seen so far 
-
-        for time, load, value in event:
-            # see a new job, update the aggregation to 
-            if load == 1:
-                res = max(res, max_value + value)
-                
-            # otherwise, only update max_val seen so far
-            else:
-                max_value = max(max_value, value)
-
-        return res
+    # Recursive function to find the greatest sum for the pairs.
+    def find_events(self, events, idx, cnt, dp):
+        if cnt == 2 or idx >= len(events):
+            return 0
+        if dp[idx][cnt] == -1:
+            end = events[idx][1]
+            lo, hi = idx + 1, len(events) - 1
+            while lo < hi:
+                mid = lo + ((hi - lo) >> 1)
+                if events[mid][0] > end:
+                    hi = mid
+                else:
+                    lo = mid + 1
+            include = events[idx][2] + (
+                self.find_events(events, lo, cnt + 1, dp)
+                if lo < len(events) and events[lo][0] > end
+                else 0
+            )
+            exclude = self.find_events(events, idx + 1, cnt, dp)
+            dp[idx][cnt] = max(include, exclude)
+        return dp[idx][cnt]
