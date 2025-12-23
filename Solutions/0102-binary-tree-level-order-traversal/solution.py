@@ -1,4 +1,3 @@
-from collections import deque
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
@@ -7,23 +6,28 @@ from collections import deque
 #         self.right = right
 class Solution:
     def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
+
+        if root is None:
+            return []
+        
+        q = deque()
+        q.append(root)
+
         ret = []
 
-        if not root:
-            return ret
-        queue = deque([root])
+        while q:
+            
+            level_arr = []
+            for i in range(len(q)):
+                node = q.popleft()
+                level_arr.append(node.val)
+                if node.left:
+                    q.append(node.left)
+                if node.right:
+                    q.append(node.right)
 
-        while(queue):
-            queue_length = len(queue)
-            temp = []
-            print(ret)
-            for i in range(queue_length):
-                ele = queue.popleft()
-                if ele.left:
-                    queue.append(ele.left)
-                if ele.right:
-                    queue.append(ele.right)
-                temp+=[ele.val]
-            ret.append(temp)
-        return ret
+            ret.append(level_arr.copy())
         
+        return ret
+
+
