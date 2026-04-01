@@ -1,5 +1,7 @@
 class Solution:
-    def survivedRobotsHealths(self, positions, healths, directions):
+    def survivedRobotsHealths(
+        self, positions: List[int], healths: List[int], directions: str
+    ) -> List[int]:
         n = len(positions)
         indices = list(range(n))
         result = []
