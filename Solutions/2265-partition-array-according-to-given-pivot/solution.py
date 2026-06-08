@@ -1,24 +1,27 @@
 class Solution:
     def pivotArray(self, nums, pivot):
-        lCount, pCount = 0, 0
+        less = 0
+        equal = 0
         for num in nums:
             if num < pivot:
-                lCount += 1
+                less += 1
             elif num == pivot:
-                pCount += 1
+                equal += 1
 
-        res = [0] * len(nums)
-        left, mid, right = 0, lCount, lCount + pCount
-
-        for num in nums:
+        ans = [0] * len(nums)
+        lessI = 0
+        equalI = less
+        greaterI = less + equal
+        for i in range(len(nums)):
+            num = nums[i]
             if num < pivot:
-                res[left] = num
-                left += 1
+                ans[lessI] = num
+                lessI += 1
             elif num > pivot:
-                res[right] = num
-                right += 1
+                ans[greaterI] = num
+                greaterI += 1
             else:
-                res[mid] = num
-                mid += 1
+                ans[equalI] = num
+                equalI += 1
 
-        return res
+        return ans
