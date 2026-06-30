@@ -1,0 +1,54 @@
+name: Daily LeetCode Explainer
+
+on:
+  workflow_dispatch:        # lets you run it on demand from the Actions tab
+    inputs:
+      force:
+        description: "Regenerate even if today's note already exists"
+        type: boolean
+        default: false
+  schedule:
+    # 00:30 UTC = 06:00 AM IST, just after LeetCode's daily problem resets.
+    - cron: "30 0 * * *"
+
+# Allow the workflow to push the generated note back to the repo.
+permissions:
+  contents: write
+
+# If a run is already in progress, don't pile up duplicates.
+concurrency:
+  group: daily-leetcode-explainer
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate today's study note
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          # Optional override, e.g. set a repo variable GEMINI_MODEL=gemini-2.0-flash
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          FORCE: ${{ inputs.force && '1' || '' }}
+        run: python scripts/daily_leetcode.py
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Daily
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            DATE=$(date -u +%Y-%m-%d)
+            git commit -m "[Daily] LeetCode study note — $DATE"
+            git push
+          fi
