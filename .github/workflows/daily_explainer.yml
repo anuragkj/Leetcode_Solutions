@@ -23,6 +23,9 @@ concurrency:
 jobs:
   generate:
     runs-on: ubuntu-latest
+    # Surfaced to the `if:` on the email step so it's skipped when mail isn't configured.
+    env:
+      MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -33,6 +36,7 @@ jobs:
           python-version: "3.12"
 
       - name: Generate today's study note
+        id: gen
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           # Optional override, e.g. set a repo variable GEMINI_MODEL=gemini-2.0-flash
@@ -52,3 +56,29 @@ jobs:
             git commit -m "[Daily] LeetCode study note — $DATE"
             git push
           fi
+
+      # ---- Optional email reminder -------------------------------------------
+      # Runs only when a NEW note was generated AND you've added the MAIL_* secrets.
+      # Needs secrets: MAIL_USERNAME (your Gmail), MAIL_PASSWORD (a Gmail *App
+      # Password*, not your login), and optionally MAIL_TO (defaults to yourself).
+      - name: Email the daily note
+        if: steps.gen.outputs.status == 'generated' && env.MAIL_USERNAME != ''
+        continue-on-error: true
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          from: LeetCode Daily <${{ secrets.MAIL_USERNAME }}>
+          to: ${{ secrets.MAIL_TO || secrets.MAIL_USERNAME }}
+          subject: "📅 LeetCode Daily — [${{ steps.gen.outputs.id }}] ${{ steps.gen.outputs.title }} (${{ steps.gen.outputs.difficulty }})"
+          html_body: |
+            <h2>Today's LeetCode: [${{ steps.gen.outputs.id }}] ${{ steps.gen.outputs.title }}</h2>
+            <p><b>Difficulty:</b> ${{ steps.gen.outputs.difficulty }} &nbsp;·&nbsp; <b>Date:</b> ${{ steps.gen.outputs.date }}</p>
+            <p>
+              📖 <a href="${{ github.server_url }}/${{ github.repository }}/blob/${{ github.ref_name }}/Daily/${{ steps.gen.outputs.note_file }}">Read the full study note (with solution &amp; dry run)</a><br>
+              🔗 <a href="${{ steps.gen.outputs.link }}">Open the problem on LeetCode</a>
+            </p>
+            <p>Read on the bus, then paste the solution yourself. 🚌</p>

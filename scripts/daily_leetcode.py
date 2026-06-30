@@ -49,6 +49,16 @@ def _post_json(url, payload, headers=None, timeout=120):
         return json.loads(resp.read().decode("utf-8"))
 
 
+def set_output(**kv):
+    """Expose values to later workflow steps via $GITHUB_OUTPUT (no-op locally)."""
+    path = os.environ.get("GITHUB_OUTPUT")
+    if not path:
+        return
+    with open(path, "a", encoding="utf-8") as f:
+        for k, v in kv.items():
+            f.write(f"{k}={v}\n")
+
+
 def graphql(query, variables=None):
     payload = {"query": query, "variables": variables or {}}
     out = _post_json(LEETCODE_GRAPHQL, payload, headers={"Referer": "https://leetcode.com"})
@@ -295,8 +305,11 @@ def main():
     os.makedirs(DAILY_DIR, exist_ok=True)
     rel_path = f"{daily['date']}-{daily['slug']}.md"
     out_path = os.path.join(DAILY_DIR, rel_path)
+    common = dict(id=daily["id"], title=daily["title"], difficulty=daily["difficulty"],
+                  date=daily["date"], link=daily["link"], note_file=rel_path)
     if os.path.exists(out_path) and os.environ.get("FORCE") != "1":
         print(f"  Already exists: Daily/{rel_path} (set FORCE=1 to regenerate). Nothing to do.", flush=True)
+        set_output(status="skipped", **common)
         return 0
 
     q = fetch_question(daily["slug"])
@@ -318,6 +331,7 @@ def main():
         f.write(md)
     update_index(meta, rel_path)
     print(f"Wrote Daily/{rel_path} ({len(md)} chars) and updated index.", flush=True)
+    set_output(status="generated", **common)
     return 0
 
 
