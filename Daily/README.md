@@ -4,4 +4,5 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-07-01 | 2812 | [Find the Safest Path in a Grid](2026-07-01-find-the-safest-path-in-a-grid.md) | Medium | Array, Binary Search, Breadth-First Search, Union-Find, Heap (Priority Queue), Matrix |
 | 2026-06-30 | 1358 | [Number of Substrings Containing All Three Characters](2026-06-30-number-of-substrings-containing-all-three-characters.md) | Medium | Hash Table, String, Sliding Window |
