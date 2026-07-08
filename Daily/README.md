@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-07-08 | 3756 | [Concatenate Non-Zero Digits and Multiply by Sum II](2026-07-08-concatenate-non-zero-digits-and-multiply-by-sum-ii.md) | Medium | Math, String, Prefix Sum |
 | 2026-07-07 | 3754 | [Concatenate Non-Zero Digits and Multiply by Sum I](2026-07-07-concatenate-non-zero-digits-and-multiply-by-sum-i.md) | Easy | Math |
 | 2026-07-06 | 1288 | [Remove Covered Intervals](2026-07-06-remove-covered-intervals.md) | Medium | Array, Sorting |
 | 2026-07-05 | 1301 | [Number of Paths with Max Score](2026-07-05-number-of-paths-with-max-score.md) | Hard | Array, Dynamic Programming, Matrix |
