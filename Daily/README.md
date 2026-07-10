@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-07-10 | 3534 | [Path Existence Queries in a Graph II](2026-07-10-path-existence-queries-in-a-graph-ii.md) | Hard | Array, Two Pointers, Binary Search, Dynamic Programming, Greedy, Bit Manipulation, Graph Theory, Sorting |
 | 2026-07-09 | 3532 | [Path Existence Queries in a Graph I](2026-07-09-path-existence-queries-in-a-graph-i.md) | Medium | Array, Hash Table, Binary Search, Union-Find, Graph Theory |
 | 2026-07-08 | 3756 | [Concatenate Non-Zero Digits and Multiply by Sum II](2026-07-08-concatenate-non-zero-digits-and-multiply-by-sum-ii.md) | Medium | Math, String, Prefix Sum |
 | 2026-07-07 | 3754 | [Concatenate Non-Zero Digits and Multiply by Sum I](2026-07-07-concatenate-non-zero-digits-and-multiply-by-sum-i.md) | Easy | Math |
