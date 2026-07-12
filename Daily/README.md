@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-07-12 | 1331 | [Rank Transform of an Array](2026-07-12-rank-transform-of-an-array.md) | Easy | Array, Hash Table, Sorting |
 | 2026-07-11 | 2685 | [Count the Number of Complete Components](2026-07-11-count-the-number-of-complete-components.md) | Medium | Depth-First Search, Breadth-First Search, Union-Find, Graph Theory |
 | 2026-07-10 | 3534 | [Path Existence Queries in a Graph II](2026-07-10-path-existence-queries-in-a-graph-ii.md) | Hard | Array, Two Pointers, Binary Search, Dynamic Programming, Greedy, Bit Manipulation, Graph Theory, Sorting |
 | 2026-07-09 | 3532 | [Path Existence Queries in a Graph I](2026-07-09-path-existence-queries-in-a-graph-i.md) | Medium | Array, Hash Table, Binary Search, Union-Find, Graph Theory |
