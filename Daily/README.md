@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-07-14 | 3336 | [Find the Number of Subsequences With Equal GCD](2026-07-14-find-the-number-of-subsequences-with-equal-gcd.md) | Hard | Array, Math, Dynamic Programming, Number Theory |
 | 2026-07-13 | 1291 | [Sequential Digits](2026-07-13-sequential-digits.md) | Medium | Enumeration |
 | 2026-07-12 | 1331 | [Rank Transform of an Array](2026-07-12-rank-transform-of-an-array.md) | Easy | Array, Hash Table, Sorting |
 | 2026-07-11 | 2685 | [Count the Number of Complete Components](2026-07-11-count-the-number-of-complete-components.md) | Medium | Depth-First Search, Breadth-First Search, Union-Find, Graph Theory |
