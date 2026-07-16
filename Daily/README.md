@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-07-16 | 3867 | [Sum of GCD of Formed Pairs](2026-07-16-sum-of-gcd-of-formed-pairs.md) | Medium | Array, Math, Two Pointers, Sorting, Simulation, Number Theory |
 | 2026-07-15 | 3658 | [GCD of Odd and Even Sums](2026-07-15-gcd-of-odd-and-even-sums.md) | Easy | Math, Number Theory |
 | 2026-07-14 | 3336 | [Find the Number of Subsequences With Equal GCD](2026-07-14-find-the-number-of-subsequences-with-equal-gcd.md) | Hard | Array, Math, Dynamic Programming, Number Theory |
 | 2026-07-13 | 1291 | [Sequential Digits](2026-07-13-sequential-digits.md) | Medium | Enumeration |
