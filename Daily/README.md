@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-07-19 | 1081 | [Smallest Subsequence of Distinct Characters](2026-07-19-smallest-subsequence-of-distinct-characters.md) | Medium | String, Stack, Greedy, Monotonic Stack |
 | 2026-07-18 | 1979 | [Find Greatest Common Divisor of Array](2026-07-18-find-greatest-common-divisor-of-array.md) | Easy | Array, Math, Number Theory |
 | 2026-07-17 | 3312 | [Sorted GCD Pair Queries](2026-07-17-sorted-gcd-pair-queries.md) | Hard | Array, Hash Table, Math, Binary Search, Combinatorics, Counting, Number Theory, Prefix Sum |
 | 2026-07-16 | 3867 | [Sum of GCD of Formed Pairs](2026-07-16-sum-of-gcd-of-formed-pairs.md) | Medium | Array, Math, Two Pointers, Sorting, Simulation, Number Theory |
