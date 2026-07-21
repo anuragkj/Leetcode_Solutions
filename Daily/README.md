@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-07-21 | 3499 | [Maximize Active Section with Trade I](2026-07-21-maximize-active-section-with-trade-i.md) | Medium | String, Enumeration |
 | 2026-07-20 | 1260 | [Shift 2D Grid](2026-07-20-shift-2d-grid.md) | Easy | Array, Matrix, Simulation |
 | 2026-07-19 | 1081 | [Smallest Subsequence of Distinct Characters](2026-07-19-smallest-subsequence-of-distinct-characters.md) | Medium | String, Stack, Greedy, Monotonic Stack |
 | 2026-07-18 | 1979 | [Find Greatest Common Divisor of Array](2026-07-18-find-greatest-common-divisor-of-array.md) | Easy | Array, Math, Number Theory |
