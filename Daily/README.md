@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-07-24 | 3514 | [Number of Unique XOR Triplets II](2026-07-24-number-of-unique-xor-triplets-ii.md) | Medium | Array, Math, Bit Manipulation, Enumeration |
 | 2026-07-23 | 3513 | [Number of Unique XOR Triplets I](2026-07-23-number-of-unique-xor-triplets-i.md) | Medium | Array, Math, Bit Manipulation |
 | 2026-07-22 | 3501 | [Maximize Active Section with Trade II](2026-07-22-maximize-active-section-with-trade-ii.md) | Hard | Array, String, Binary Search, Segment Tree |
 | 2026-07-21 | 3499 | [Maximize Active Section with Trade I](2026-07-21-maximize-active-section-with-trade-i.md) | Medium | String, Enumeration |
