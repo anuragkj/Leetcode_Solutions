@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-07-26 | 628 | [Maximum Product of Three Numbers](2026-07-26-maximum-product-of-three-numbers.md) | Easy | Array, Math, Sorting |
 | 2026-07-25 | 3536 | [Maximum Product of Two Digits](2026-07-25-maximum-product-of-two-digits.md) | Easy | Math, Sorting |
 | 2026-07-24 | 3514 | [Number of Unique XOR Triplets II](2026-07-24-number-of-unique-xor-triplets-ii.md) | Medium | Array, Math, Bit Manipulation, Enumeration |
 | 2026-07-23 | 3513 | [Number of Unique XOR Triplets I](2026-07-23-number-of-unique-xor-triplets-i.md) | Medium | Array, Math, Bit Manipulation |
