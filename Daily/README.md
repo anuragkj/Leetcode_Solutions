@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-07-30 | 3014 | [Minimum Number of Pushes to Type Word I](2026-07-30-minimum-number-of-pushes-to-type-word-i.md) | Easy | Math, String, Greedy |
 | 2026-07-29 | 3518 | [Smallest Palindromic Rearrangement II](2026-07-29-smallest-palindromic-rearrangement-ii.md) | Hard | Hash Table, Math, String, Combinatorics, Counting |
 | 2026-07-28 | 3517 | [Smallest Palindromic Rearrangement I](2026-07-28-smallest-palindromic-rearrangement-i.md) | Medium | String, Sorting, Counting Sort |
 | 2026-07-27 | 1464 | [Maximum Product of Two Elements in an Array](2026-07-27-maximum-product-of-two-elements-in-an-array.md) | Easy | Array, Sorting, Heap (Priority Queue) |
