@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-08-01 | 486 | [Predict the Winner](2026-08-01-predict-the-winner.md) | Medium | Array, Math, Dynamic Programming, Recursion, Game Theory |
 | 2026-07-31 | 3016 | [Minimum Number of Pushes to Type Word II](2026-07-31-minimum-number-of-pushes-to-type-word-ii.md) | Medium | Hash Table, String, Greedy, Sorting, Counting |
 | 2026-07-30 | 3014 | [Minimum Number of Pushes to Type Word I](2026-07-30-minimum-number-of-pushes-to-type-word-i.md) | Easy | Math, String, Greedy |
 | 2026-07-29 | 3518 | [Smallest Palindromic Rearrangement II](2026-07-29-smallest-palindromic-rearrangement-ii.md) | Hard | Hash Table, Math, String, Combinatorics, Counting |
