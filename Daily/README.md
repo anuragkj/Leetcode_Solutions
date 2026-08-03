@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-08-03 | 1406 | [Stone Game III](2026-08-03-stone-game-iii.md) | Hard | Array, Math, Dynamic Programming, Game Theory |
 | 2026-08-02 | 877 | [Stone Game](2026-08-02-stone-game.md) | Medium | Array, Math, Dynamic Programming, Game Theory |
 | 2026-08-01 | 486 | [Predict the Winner](2026-08-01-predict-the-winner.md) | Medium | Array, Math, Dynamic Programming, Recursion, Game Theory |
 | 2026-07-31 | 3016 | [Minimum Number of Pushes to Type Word II](2026-07-31-minimum-number-of-pushes-to-type-word-ii.md) | Medium | Hash Table, String, Greedy, Sorting, Counting |
