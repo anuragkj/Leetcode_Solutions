@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-08-09 | 1140 | [Stone Game II](2026-08-09-stone-game-ii.md) | Medium | Array, Math, Dynamic Programming, Minimax, Prefix Sum, Game Theory, Zero-Sum Game |
 | 2026-08-08 | 3302 | [Find the Lexicographically Smallest Valid Sequence](2026-08-08-find-the-lexicographically-smallest-valid-sequence.md) | Medium | Two Pointers, String, Dynamic Programming, Greedy |
 | 2026-08-07 | 3348 | [Smallest Divisible Digit Product II](2026-08-07-smallest-divisible-digit-product-ii.md) | Hard | Math, String, Backtracking, Greedy, Number Theory |
 | 2026-08-06 | 3345 | [Smallest Divisible Digit Product I](2026-08-06-smallest-divisible-digit-product-i.md) | Easy | Math, Enumeration |
