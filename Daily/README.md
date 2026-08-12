@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-08-12 | 2958 | [Length of Longest Subarray With at Most K Frequency](2026-08-12-length-of-longest-subarray-with-at-most-k-frequency.md) | Medium | Array, Hash Table, Sliding Window |
 | 2026-08-11 | 2996 | [Smallest Missing Integer Greater Than Sequential Prefix Sum](2026-08-11-smallest-missing-integer-greater-than-sequential-prefix-sum.md) | Easy | Array, Hash Table, Sorting |
 | 2026-08-10 | 1510 | [Stone Game IV](2026-08-10-stone-game-iv.md) | Hard | Math, Dynamic Programming, Minimax, Game Theory, Nim Game, Sprague–Grundy Theorem, Zero-Sum Game |
 | 2026-08-09 | 1140 | [Stone Game II](2026-08-09-stone-game-ii.md) | Medium | Array, Math, Dynamic Programming, Minimax, Prefix Sum, Game Theory, Zero-Sum Game |
