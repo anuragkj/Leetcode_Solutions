@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-08-17 | 1563 | [Stone Game V](2026-08-17-stone-game-v.md) | Hard | Array, Math, Dynamic Programming, Game Theory |
 | 2026-08-16 | 2029 | [Stone Game IX](2026-08-16-stone-game-ix.md) | Medium | Array, Math, Greedy, Minimax, Counting, Game Theory, Nim Game, Zero-Sum Game |
 | 2026-08-15 | 3702 | [Longest Subsequence With Non-Zero Bitwise XOR](2026-08-15-longest-subsequence-with-non-zero-bitwise-xor.md) | Medium | Array, Bit Manipulation |
 | 2026-08-14 | 3090 | [Maximum Length Substring With Two Occurrences](2026-08-14-maximum-length-substring-with-two-occurrences.md) | Easy | Hash Table, String, Sliding Window |
