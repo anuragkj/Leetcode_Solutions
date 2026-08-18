@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-08-18 | 3471 | [Find the Largest Almost Missing Integer](2026-08-18-find-the-largest-almost-missing-integer.md) | Easy | Array, Hash Table |
 | 2026-08-17 | 1563 | [Stone Game V](2026-08-17-stone-game-v.md) | Hard | Array, Math, Dynamic Programming, Game Theory |
 | 2026-08-16 | 2029 | [Stone Game IX](2026-08-16-stone-game-ix.md) | Medium | Array, Math, Greedy, Minimax, Counting, Game Theory, Nim Game, Zero-Sum Game |
 | 2026-08-15 | 3702 | [Longest Subsequence With Non-Zero Bitwise XOR](2026-08-15-longest-subsequence-with-non-zero-bitwise-xor.md) | Medium | Array, Bit Manipulation |
