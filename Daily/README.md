@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-08-22 | 3622 | [Check Divisibility by Digit Sum and Product](2026-08-22-check-divisibility-by-digit-sum-and-product.md) | Easy | Math |
 | 2026-08-21 | 3116 | [Kth Smallest Amount With Single Denomination Combination](2026-08-21-kth-smallest-amount-with-single-denomination-combination.md) | Hard | Array, Math, Binary Search, Bit Manipulation, Combinatorics, Number Theory |
 | 2026-08-20 | 3069 | [Distribute Elements Into Two Arrays I](2026-08-20-distribute-elements-into-two-arrays-i.md) | Easy | Array, Simulation |
 | 2026-08-19 | 1386 | [Cinema Seat Allocation](2026-08-19-cinema-seat-allocation.md) | Medium | Array, Hash Table, Greedy, Bit Manipulation |
