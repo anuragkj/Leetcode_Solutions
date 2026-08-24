@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-08-24 | 1872 | [Stone Game VIII](2026-08-24-stone-game-viii.md) | Hard | Array, Math, Dynamic Programming, Minimax, Prefix Sum, Game Theory, Zero-Sum Game |
 | 2026-08-23 | 1927 | [Sum Game](2026-08-23-sum-game.md) | Medium | Math, String, Greedy, Game Theory |
 | 2026-08-22 | 3622 | [Check Divisibility by Digit Sum and Product](2026-08-22-check-divisibility-by-digit-sum-and-product.md) | Easy | Math |
 | 2026-08-21 | 3116 | [Kth Smallest Amount With Single Denomination Combination](2026-08-21-kth-smallest-amount-with-single-denomination-combination.md) | Hard | Array, Math, Binary Search, Bit Manipulation, Combinatorics, Number Theory |
