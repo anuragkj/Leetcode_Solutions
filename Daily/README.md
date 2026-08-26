@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-08-26 | 2904 | [Shortest and Lexicographically Smallest Beautiful String](2026-08-26-shortest-and-lexicographically-smallest-beautiful-string.md) | Medium | String, Sliding Window |
 | 2026-08-25 | 3718 | [Smallest Missing Multiple of K](2026-08-25-smallest-missing-multiple-of-k.md) | Easy | Array, Hash Table |
 | 2026-08-24 | 1872 | [Stone Game VIII](2026-08-24-stone-game-viii.md) | Hard | Array, Math, Dynamic Programming, Minimax, Prefix Sum, Game Theory, Zero-Sum Game |
 | 2026-08-23 | 1927 | [Sum Game](2026-08-23-sum-game.md) | Medium | Math, String, Greedy, Game Theory |
