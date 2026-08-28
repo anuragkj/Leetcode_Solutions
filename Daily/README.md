@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-08-28 | 3734 | [Lexicographically Smallest Palindromic Permutation Greater Than Target](2026-08-28-lexicographically-smallest-palindromic-permutation-greater-than-target.md) | Hard | Two Pointers, String, Enumeration |
 | 2026-08-27 | 3720 | [Lexicographically Smallest Permutation Greater Than Target](2026-08-27-lexicographically-smallest-permutation-greater-than-target.md) | Medium | Hash Table, String, Greedy, Counting, Enumeration |
 | 2026-08-26 | 2904 | [Shortest and Lexicographically Smallest Beautiful String](2026-08-26-shortest-and-lexicographically-smallest-beautiful-string.md) | Medium | String, Sliding Window |
 | 2026-08-25 | 3718 | [Smallest Missing Multiple of K](2026-08-25-smallest-missing-multiple-of-k.md) | Easy | Array, Hash Table |
