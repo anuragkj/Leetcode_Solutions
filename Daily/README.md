@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-08-30 | 2091 | [Removing Minimum and Maximum From Array](2026-08-30-removing-minimum-and-maximum-from-array.md) | Medium | Array, Greedy |
 | 2026-08-29 | 2948 | [Make Lexicographically Smallest Array by Swapping Elements](2026-08-29-make-lexicographically-smallest-array-by-swapping-elements.md) | Medium | Array, Union-Find, Sorting |
 | 2026-08-28 | 3734 | [Lexicographically Smallest Palindromic Permutation Greater Than Target](2026-08-28-lexicographically-smallest-palindromic-permutation-greater-than-target.md) | Hard | Two Pointers, String, Enumeration |
 | 2026-08-27 | 3720 | [Lexicographically Smallest Permutation Greater Than Target](2026-08-27-lexicographically-smallest-permutation-greater-than-target.md) | Medium | Hash Table, String, Greedy, Counting, Enumeration |
