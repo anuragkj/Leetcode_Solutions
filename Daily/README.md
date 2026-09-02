@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-09-02 | 3875 | [Construct Uniform Parity Array I](2026-09-02-construct-uniform-parity-array-i.md) | Easy | Array, Math |
 | 2026-09-01 | 3568 | [Minimum Moves to Clean the Classroom](2026-09-01-minimum-moves-to-clean-the-classroom.md) | Medium | Array, Hash Table, Bit Manipulation, Breadth-First Search, Matrix |
 | 2026-08-31 | 2058 | [Find the Minimum and Maximum Number of Nodes Between Critical Points](2026-08-31-find-the-minimum-and-maximum-number-of-nodes-between-critical-points.md) | Medium | Linked List |
 | 2026-08-30 | 2091 | [Removing Minimum and Maximum From Array](2026-08-30-removing-minimum-and-maximum-from-array.md) | Medium | Array, Greedy |
