@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-09-05 | 3904 | [Smallest Stable Index II](2026-09-05-smallest-stable-index-ii.md) | Medium | Array, Prefix Sum |
 | 2026-09-04 | 3903 | [Smallest Stable Index I](2026-09-04-smallest-stable-index-i.md) | Easy | Array, Prefix Sum |
 | 2026-09-03 | 3876 | [Construct Uniform Parity Array II](2026-09-03-construct-uniform-parity-array-ii.md) | Medium | Array, Math |
 | 2026-09-02 | 3875 | [Construct Uniform Parity Array I](2026-09-02-construct-uniform-parity-array-i.md) | Easy | Array, Math |
