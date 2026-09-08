@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-09-08 | 3870 | [Count Commas in Range](2026-09-08-count-commas-in-range.md) | Easy | Math |
 | 2026-09-07 | 940 | [Distinct Subsequences II](2026-09-07-distinct-subsequences-ii.md) | Hard | String, Dynamic Programming |
 | 2026-09-06 | 115 | [Distinct Subsequences](2026-09-06-distinct-subsequences.md) | Hard | String, Dynamic Programming |
 | 2026-09-05 | 3904 | [Smallest Stable Index II](2026-09-05-smallest-stable-index-ii.md) | Medium | Array, Prefix Sum |
