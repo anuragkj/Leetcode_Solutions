@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-09-12 | 3414 | [Maximum Score of Non-overlapping Intervals](2026-09-12-maximum-score-of-non-overlapping-intervals.md) | Hard | Array, Binary Search, Dynamic Programming, Sorting |
 | 2026-09-11 | 3483 | [Unique 3-Digit Even Numbers](2026-09-11-unique-3-digit-even-numbers.md) | Easy | Array, Hash Table, Recursion, Enumeration |
 | 2026-09-10 | 2265 | [Count Nodes Equal to Average of Subtree](2026-09-10-count-nodes-equal-to-average-of-subtree.md) | Medium | Tree, Depth-First Search, Binary Tree |
 | 2026-09-09 | 3871 | [Count Commas in Range II](2026-09-09-count-commas-in-range-ii.md) | Medium | Math |
