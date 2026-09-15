@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-09-15 | 2472 | [Maximum Number of Non-overlapping Palindrome Substrings](2026-09-15-maximum-number-of-non-overlapping-palindrome-substrings.md) | Hard | Two Pointers, String, Dynamic Programming, Greedy |
 | 2026-09-14 | 836 | [Rectangle Overlap](2026-09-14-rectangle-overlap.md) | Easy | Math, Geometry |
 | 2026-09-13 | 835 | [Image Overlap](2026-09-13-image-overlap.md) | Medium | Array, Matrix |
 | 2026-09-12 | 3414 | [Maximum Score of Non-overlapping Intervals](2026-09-12-maximum-score-of-non-overlapping-intervals.md) | Hard | Array, Binary Search, Dynamic Programming, Sorting |
