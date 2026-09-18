@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-09-18 | 1520 | [Maximum Number of Non-Overlapping Substrings](2026-09-18-maximum-number-of-non-overlapping-substrings.md) | Hard | Hash Table, String, Greedy, Sorting |
 | 2026-09-17 | 1477 | [Find Two Non-overlapping Sub-arrays Each With Target Sum](2026-09-17-find-two-non-overlapping-sub-arrays-each-with-target-sum.md) | Medium | Array, Hash Table, Binary Search, Dynamic Programming, Sliding Window |
 | 2026-09-16 | 1621 | [Number of Sets of K Non-Overlapping Line Segments](2026-09-16-number-of-sets-of-k-non-overlapping-line-segments.md) | Medium | Math, Dynamic Programming, Combinatorics, Prefix Sum |
 | 2026-09-15 | 2472 | [Maximum Number of Non-overlapping Palindrome Substrings](2026-09-15-maximum-number-of-non-overlapping-palindrome-substrings.md) | Hard | Two Pointers, String, Dynamic Programming, Greedy |
