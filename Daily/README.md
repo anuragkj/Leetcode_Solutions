@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-09-22 | 3525 | [Find X Value of Array II](2026-09-22-find-x-value-of-array-ii.md) | Hard | Array, Math, Segment Tree |
 | 2026-09-21 | 3524 | [Find X Value of Array I](2026-09-21-find-x-value-of-array-i.md) | Medium | Array, Math, Dynamic Programming |
 | 2026-09-20 | 3498 | [Reverse Degree of a String](2026-09-20-reverse-degree-of-a-string.md) | Easy | String, Simulation |
 | 2026-09-19 | 1401 | [Circle and Rectangle Overlapping](2026-09-19-circle-and-rectangle-overlapping.md) | Medium | Math, Geometry |
