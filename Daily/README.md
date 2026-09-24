@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-09-24 | 3550 | [Smallest Index With Digit Sum Equal to Index](2026-09-24-smallest-index-with-digit-sum-equal-to-index.md) | Easy | Array, Math |
 | 2026-09-23 | 1658 | [Minimum Operations to Reduce X to Zero](2026-09-23-minimum-operations-to-reduce-x-to-zero.md) | Medium | Array, Hash Table, Binary Search, Sliding Window, Prefix Sum |
 | 2026-09-22 | 3525 | [Find X Value of Array II](2026-09-22-find-x-value-of-array-ii.md) | Hard | Array, Math, Segment Tree |
 | 2026-09-21 | 3524 | [Find X Value of Array I](2026-09-21-find-x-value-of-array-i.md) | Medium | Array, Math, Dynamic Programming |
