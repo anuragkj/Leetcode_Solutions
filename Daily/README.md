@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-09-26 | 1807 | [Evaluate the Bracket Pairs of a String](2026-09-26-evaluate-the-bracket-pairs-of-a-string.md) | Medium | Array, Hash Table, String |
 | 2026-09-25 | 1096 | [Brace Expansion II](2026-09-25-brace-expansion-ii.md) | Hard | Hash Table, String, Backtracking, Stack, Breadth-First Search, Sorting |
 | 2026-09-24 | 3550 | [Smallest Index With Digit Sum Equal to Index](2026-09-24-smallest-index-with-digit-sum-equal-to-index.md) | Easy | Array, Math |
 | 2026-09-23 | 1658 | [Minimum Operations to Reduce X to Zero](2026-09-23-minimum-operations-to-reduce-x-to-zero.md) | Medium | Array, Hash Table, Binary Search, Sliding Window, Prefix Sum |
