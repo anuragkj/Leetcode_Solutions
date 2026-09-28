@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-09-28 | 1614 | [Maximum Nesting Depth of the Parentheses](2026-09-28-maximum-nesting-depth-of-the-parentheses.md) | Easy | String, Stack, Bracket Sequences |
 | 2026-09-27 | 1190 | [Reverse Substrings Between Each Pair of Parentheses](2026-09-27-reverse-substrings-between-each-pair-of-parentheses.md) | Medium | String, Stack, Bracket Sequences |
 | 2026-09-26 | 1807 | [Evaluate the Bracket Pairs of a String](2026-09-26-evaluate-the-bracket-pairs-of-a-string.md) | Medium | Array, Hash Table, String |
 | 2026-09-25 | 1096 | [Brace Expansion II](2026-09-25-brace-expansion-ii.md) | Hard | Hash Table, String, Backtracking, Stack, Breadth-First Search, Sorting |
