@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-10-01 | 20 | [Valid Parentheses](2026-10-01-valid-parentheses.md) | Easy | String, Stack, Bracket Sequences |
 | 2026-09-30 | 1111 | [Maximum Nesting Depth of Two Valid Parentheses Strings](2026-09-30-maximum-nesting-depth-of-two-valid-parentheses-strings.md) | Medium | String, Stack, Bracket Sequences |
 | 2026-09-28 | 1614 | [Maximum Nesting Depth of the Parentheses](2026-09-28-maximum-nesting-depth-of-the-parentheses.md) | Easy | String, Stack, Bracket Sequences |
 | 2026-09-27 | 1190 | [Reverse Substrings Between Each Pair of Parentheses](2026-09-27-reverse-substrings-between-each-pair-of-parentheses.md) | Medium | String, Stack, Bracket Sequences |
