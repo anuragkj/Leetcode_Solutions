@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-10-03 | 32 | [Longest Valid Parentheses](2026-10-03-longest-valid-parentheses.md) | Hard | String, Dynamic Programming, Stack, Bracket Sequences |
 | 2026-10-02 | 22 | [Generate Parentheses](2026-10-02-generate-parentheses.md) | Medium | String, Dynamic Programming, Backtracking, Bracket Sequences |
 | 2026-10-01 | 20 | [Valid Parentheses](2026-10-01-valid-parentheses.md) | Easy | String, Stack, Bracket Sequences |
 | 2026-09-30 | 1111 | [Maximum Nesting Depth of Two Valid Parentheses Strings](2026-09-30-maximum-nesting-depth-of-two-valid-parentheses-strings.md) | Medium | String, Stack, Bracket Sequences |
