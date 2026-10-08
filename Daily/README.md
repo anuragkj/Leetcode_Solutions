@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-10-08 | 1021 | [Remove Outermost Parentheses](2026-10-08-remove-outermost-parentheses.md) | Easy | String, Stack, Bracket Sequences |
 | 2026-10-07 | 301 | [Remove Invalid Parentheses](2026-10-07-remove-invalid-parentheses.md) | Hard | String, Backtracking, Breadth-First Search |
 | 2026-10-06 | 921 | [Minimum Add to Make Parentheses Valid](2026-10-06-minimum-add-to-make-parentheses-valid.md) | Medium | String, Stack, Greedy, Bracket Sequences |
 | 2026-10-05 | 856 | [Score of Parentheses](2026-10-05-score-of-parentheses.md) | Medium | String, Stack, Bracket Sequences |
