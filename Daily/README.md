@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-10-12 | 2897 | [Apply Operations on Array to Maximize Sum of Squares](2026-10-12-apply-operations-on-array-to-maximize-sum-of-squares.md) | Hard | Array, Hash Table, Greedy, Bit Manipulation |
 | 2026-10-10 | 2333 | [Minimum Sum of Squared Difference](2026-10-10-minimum-sum-of-squared-difference.md) | Medium | Array, Binary Search, Greedy, Sorting, Heap (Priority Queue) |
 | 2026-10-09 | 1541 | [Minimum Insertions to Balance a Parentheses String](2026-10-09-minimum-insertions-to-balance-a-parentheses-string.md) | Medium | String, Stack, Greedy, Bracket Sequences |
 | 2026-10-08 | 1021 | [Remove Outermost Parentheses](2026-10-08-remove-outermost-parentheses.md) | Easy | String, Stack, Bracket Sequences |
