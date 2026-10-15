@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-10-15 | 2913 | [Subarrays Distinct Element Sum of Squares I](2026-10-15-subarrays-distinct-element-sum-of-squares-i.md) | Easy | Array, Hash Table, Binary Indexed Tree, Segment Tree |
 | 2026-10-14 | 3723 | [Maximize Sum of Squares of Digits](2026-10-14-maximize-sum-of-squares-of-digits.md) | Medium | Math, Greedy |
 | 2026-10-13 | 3727 | [Maximum Alternating Sum of Squares](2026-10-13-maximum-alternating-sum-of-squares.md) | Medium | Array, Greedy, Sorting |
 | 2026-10-12 | 2897 | [Apply Operations on Array to Maximize Sum of Squares](2026-10-12-apply-operations-on-array-to-maximize-sum-of-squares.md) | Hard | Array, Hash Table, Greedy, Bit Manipulation |
