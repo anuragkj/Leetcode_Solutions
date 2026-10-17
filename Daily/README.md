@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-10-17 | 3551 | [Minimum Swaps to Sort by Digit Sum](2026-10-17-minimum-swaps-to-sort-by-digit-sum.md) | Medium | Array, Hash Table, Sorting |
 | 2026-10-16 | 2916 | [Subarrays Distinct Element Sum of Squares II](2026-10-16-subarrays-distinct-element-sum-of-squares-ii.md) | Hard | Array, Hash Table, Binary Indexed Tree, Segment Tree |
 | 2026-10-15 | 2913 | [Subarrays Distinct Element Sum of Squares I](2026-10-15-subarrays-distinct-element-sum-of-squares-i.md) | Easy | Array, Hash Table, Binary Indexed Tree, Segment Tree |
 | 2026-10-14 | 3723 | [Maximize Sum of Squares of Digits](2026-10-14-maximize-sum-of-squares-of-digits.md) | Medium | Math, Greedy |
