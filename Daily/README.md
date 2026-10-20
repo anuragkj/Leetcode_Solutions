@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-10-20 | 3886 | [Sum of Sortable Integers](2026-10-20-sum-of-sortable-integers.md) | Hard | Array, Math, Sorting, Enumeration |
 | 2026-10-19 | 2089 | [Find Target Indices After Sorting Array](2026-10-19-find-target-indices-after-sorting-array.md) | Easy | Array, Binary Search, Sorting |
 | 2026-10-18 | 1569 | [Number of Ways to Reorder Array to Get Same BST](2026-10-18-number-of-ways-to-reorder-array-to-get-same-bst.md) | Hard | Array, Math, Divide and Conquer, Dynamic Programming, Tree, Union-Find, Binary Search Tree, Memoization, Combinatorics, Binary Tree, Fermat's Little Theorem |
 | 2026-10-17 | 3551 | [Minimum Swaps to Sort by Digit Sum](2026-10-17-minimum-swaps-to-sort-by-digit-sum.md) | Medium | Array, Hash Table, Sorting |
