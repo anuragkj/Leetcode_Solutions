@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-10-22 | 3942 | [Minimum Operations to Sort a Permutation](2026-10-22-minimum-operations-to-sort-a-permutation.md) | Medium | Array |
 | 2026-10-21 | 3863 | [Minimum Operations to Sort a String](2026-10-21-minimum-operations-to-sort-a-string.md) | Medium | String |
 | 2026-10-20 | 3886 | [Sum of Sortable Integers](2026-10-20-sum-of-sortable-integers.md) | Hard | Array, Math, Sorting, Enumeration |
 | 2026-10-19 | 2089 | [Find Target Indices After Sorting Array](2026-10-19-find-target-indices-after-sorting-array.md) | Easy | Array, Binary Search, Sorting |
