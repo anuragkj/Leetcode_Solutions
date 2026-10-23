@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-10-23 | 3644 | [Maximum K to Sort a Permutation](2026-10-23-maximum-k-to-sort-a-permutation.md) | Medium | Array, Bit Manipulation |
 | 2026-10-22 | 3942 | [Minimum Operations to Sort a Permutation](2026-10-22-minimum-operations-to-sort-a-permutation.md) | Medium | Array |
 | 2026-10-21 | 3863 | [Minimum Operations to Sort a String](2026-10-21-minimum-operations-to-sort-a-string.md) | Medium | String |
 | 2026-10-20 | 3886 | [Sum of Sortable Integers](2026-10-20-sum-of-sortable-integers.md) | Hard | Array, Math, Sorting, Enumeration |
