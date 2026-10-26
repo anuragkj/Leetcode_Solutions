@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-10-26 | 3619 | [Count Islands With Total Value Divisible by K](2026-10-26-count-islands-with-total-value-divisible-by-k.md) | Medium | Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix |
 | 2026-10-25 | 1254 | [Number of Closed Islands](2026-10-25-number-of-closed-islands.md) | Medium | Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix |
 | 2026-10-24 | 2409 | [Count Days Spent Together](2026-10-24-count-days-spent-together.md) | Easy | Math, String |
 | 2026-10-23 | 3644 | [Maximum K to Sort a Permutation](2026-10-23-maximum-k-to-sort-a-permutation.md) | Medium | Array, Bit Manipulation |
