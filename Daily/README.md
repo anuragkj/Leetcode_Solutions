@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-10-29 | 3841 | [Palindromic Path Queries in a Tree](2026-10-29-palindromic-path-queries-in-a-tree.md) | Hard | Array, String, Divide and Conquer, Bit Manipulation, Tree, Depth-First Search, Binary Indexed Tree, Segment Tree |
 | 2026-10-28 | 3882 | [Minimum XOR Path in a Grid](2026-10-28-minimum-xor-path-in-a-grid.md) | Medium | Array, Dynamic Programming, Bit Manipulation, Matrix |
 | 2026-10-27 | 3963 | [Create Grid With Exactly One Path](2026-10-27-create-grid-with-exactly-one-path.md) | Easy | — |
 | 2026-10-26 | 3619 | [Count Islands With Total Value Divisible by K](2026-10-26-count-islands-with-total-value-divisible-by-k.md) | Medium | Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix |
