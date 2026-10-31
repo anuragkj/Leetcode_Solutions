@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-10-31 | 3665 | [Twisted Mirror Path Count](2026-10-31-twisted-mirror-path-count.md) | Medium | Array, Dynamic Programming, Matrix |
 | 2026-10-30 | 3970 | [Shortest Path With At Most K Consecutive Identical Characters](2026-10-30-shortest-path-with-at-most-k-consecutive-identical-characters.md) | Medium | String, Graph Theory, Heap (Priority Queue), Shortest Path |
 | 2026-10-29 | 3841 | [Palindromic Path Queries in a Tree](2026-10-29-palindromic-path-queries-in-a-tree.md) | Hard | Array, String, Divide and Conquer, Bit Manipulation, Tree, Depth-First Search, Binary Indexed Tree, Segment Tree |
 | 2026-10-28 | 3882 | [Minimum XOR Path in a Grid](2026-10-28-minimum-xor-path-in-a-grid.md) | Medium | Array, Dynamic Programming, Bit Manipulation, Matrix |
