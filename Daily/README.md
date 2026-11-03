@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-11-03 | 3736 | [Minimum Moves to Equal Array Elements III](2026-11-03-minimum-moves-to-equal-array-elements-iii.md) | Easy | Array, Math |
 | 2026-11-02 | 462 | [Minimum Moves to Equal Array Elements II](2026-11-02-minimum-moves-to-equal-array-elements-ii.md) | Medium | Array, Math, Sorting |
 | 2026-11-01 | 453 | [Minimum Moves to Equal Array Elements](2026-11-01-minimum-moves-to-equal-array-elements.md) | Medium | Array, Math |
 | 2026-10-31 | 3665 | [Twisted Mirror Path Count](2026-10-31-twisted-mirror-path-count.md) | Medium | Array, Dynamic Programming, Matrix |
