@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-11-07 | 1882 | [Process Tasks Using Servers](2026-11-07-process-tasks-using-servers.md) | Medium | Array, Heap (Priority Queue) |
 | 2026-11-05 | 1385 | [Find the Distance Value Between Two Arrays](2026-11-05-find-the-distance-value-between-two-arrays.md) | Easy | Array, Two Pointers, Binary Search, Sorting |
 | 2026-11-04 | 3505 | [Minimum Operations to Make Elements Within K Subarrays Equal](2026-11-04-minimum-operations-to-make-elements-within-k-subarrays-equal.md) | Hard | Array, Hash Table, Math, Dynamic Programming, Sliding Window, Heap (Priority Queue) |
 | 2026-11-03 | 3736 | [Minimum Moves to Equal Array Elements III](2026-11-03-minimum-moves-to-equal-array-elements-iii.md) | Easy | Array, Math |
