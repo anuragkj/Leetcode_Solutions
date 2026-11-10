@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-11-10 | 3693 | [Climbing Stairs II](2026-11-10-climbing-stairs-ii.md) | Medium | Array, Dynamic Programming |
 | 2026-11-09 | 1606 | [Find Servers That Handled Most Number of Requests](2026-11-09-find-servers-that-handled-most-number-of-requests.md) | Hard | Array, Heap (Priority Queue), Simulation, Ordered Set |
 | 2026-11-08 | 1267 | [Count Servers that Communicate](2026-11-08-count-servers-that-communicate.md) | Medium | Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix, Counting |
 | 2026-11-07 | 1882 | [Process Tasks Using Servers](2026-11-07-process-tasks-using-servers.md) | Medium | Array, Heap (Priority Queue) |
