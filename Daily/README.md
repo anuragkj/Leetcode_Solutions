@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-11-12 | 3105 | [Longest Strictly Increasing or Strictly Decreasing Subarray](2026-11-12-longest-strictly-increasing-or-strictly-decreasing-subarray.md) | Easy | Array |
 | 2026-11-11 | 3789 | [Minimum Cost to Acquire Required Items](2026-11-11-minimum-cost-to-acquire-required-items.md) | Medium | Math, Greedy |
 | 2026-11-10 | 3693 | [Climbing Stairs II](2026-11-10-climbing-stairs-ii.md) | Medium | Array, Dynamic Programming |
 | 2026-11-09 | 1606 | [Find Servers That Handled Most Number of Requests](2026-11-09-find-servers-that-handled-most-number-of-requests.md) | Hard | Array, Heap (Priority Queue), Simulation, Ordered Set |
