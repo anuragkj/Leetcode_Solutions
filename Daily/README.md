@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-11-13 | 3420 | [Count Non-Decreasing Subarrays After K Operations](2026-11-13-count-non-decreasing-subarrays-after-k-operations.md) | Hard | Array, Stack, Segment Tree, Queue, Sliding Window, Monotonic Stack, Monotonic Queue |
 | 2026-11-12 | 3105 | [Longest Strictly Increasing or Strictly Decreasing Subarray](2026-11-12-longest-strictly-increasing-or-strictly-decreasing-subarray.md) | Easy | Array |
 | 2026-11-11 | 3789 | [Minimum Cost to Acquire Required Items](2026-11-11-minimum-cost-to-acquire-required-items.md) | Medium | Math, Greedy |
 | 2026-11-10 | 3693 | [Climbing Stairs II](2026-11-10-climbing-stairs-ii.md) | Medium | Array, Dynamic Programming |
