@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-11-16 | 2243 | [Calculate Digit Sum of a String](2026-11-16-calculate-digit-sum-of-a-string.md) | Easy | String, Simulation |
 | 2026-11-15 | 1524 | [Number of Sub-arrays With Odd Sum](2026-11-15-number-of-sub-arrays-with-odd-sum.md) | Medium | Array, Math, Dynamic Programming, Prefix Sum |
 | 2026-11-14 | 3364 | [Minimum Positive Sum Subarray ](2026-11-14-minimum-positive-sum-subarray.md) | Easy | Array, Sliding Window, Prefix Sum |
 | 2026-11-13 | 3420 | [Count Non-Decreasing Subarrays After K Operations](2026-11-13-count-non-decreasing-subarrays-after-k-operations.md) | Hard | Array, Stack, Segment Tree, Queue, Sliding Window, Monotonic Stack, Monotonic Queue |
