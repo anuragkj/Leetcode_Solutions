@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-11-19 | 2567 | [Minimum Score by Changing Two Elements](2026-11-19-minimum-score-by-changing-two-elements.md) | Medium | Array, Greedy, Sorting |
 | 2026-11-18 | 2914 | [Minimum Number of Changes to Make Binary String Beautiful](2026-11-18-minimum-number-of-changes-to-make-binary-string-beautiful.md) | Medium | String |
 | 2026-11-17 | 2911 | [Minimum Changes to Make K Semi-palindromes](2026-11-17-minimum-changes-to-make-k-semi-palindromes.md) | Hard | Two Pointers, String, Dynamic Programming |
 | 2026-11-16 | 2243 | [Calculate Digit Sum of a String](2026-11-16-calculate-digit-sum-of-a-string.md) | Easy | String, Simulation |
