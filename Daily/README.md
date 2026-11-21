@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-11-21 | 3331 | [Find Subtree Sizes After Changes](2026-11-21-find-subtree-sizes-after-changes.md) | Medium | Array, Hash Table, String, Tree, Depth-First Search |
 | 2026-11-20 | 3041 | [Maximize Consecutive Elements in an Array After Modification](2026-11-20-maximize-consecutive-elements-in-an-array-after-modification.md) | Hard | Array, Dynamic Programming, Sorting |
 | 2026-11-19 | 2567 | [Minimum Score by Changing Two Elements](2026-11-19-minimum-score-by-changing-two-elements.md) | Medium | Array, Greedy, Sorting |
 | 2026-11-18 | 2914 | [Minimum Number of Changes to Make Binary String Beautiful](2026-11-18-minimum-number-of-changes-to-make-binary-string-beautiful.md) | Medium | String |
