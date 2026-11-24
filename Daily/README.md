@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-11-24 | 3411 | [Maximum Subarray With Equal Products](2026-11-24-maximum-subarray-with-equal-products.md) | Easy | Array, Math, Sliding Window, Enumeration, Number Theory |
 | 2026-11-22 | 2124 | [Check if All A's Appears Before All B's](2026-11-22-check-if-all-as-appears-before-all-bs.md) | Easy | String |
 | 2026-11-21 | 3331 | [Find Subtree Sizes After Changes](2026-11-21-find-subtree-sizes-after-changes.md) | Medium | Array, Hash Table, String, Tree, Depth-First Search |
 | 2026-11-20 | 3041 | [Maximize Consecutive Elements in an Array After Modification](2026-11-20-maximize-consecutive-elements-in-an-array-after-modification.md) | Hard | Array, Dynamic Programming, Sorting |
