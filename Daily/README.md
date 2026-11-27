@@ -4,6 +4,7 @@ Auto-generated, paste-ready solutions + deep explanations for the LeetCode **Que
 
 | Date | # | Problem | Difficulty | Topics |
 |------|---|---------|------------|--------|
+| 2026-11-27 | 3946 | [Maximum Number of Items From Sale I](2026-11-27-maximum-number-of-items-from-sale-i.md) | Medium | Array, Dynamic Programming, Greedy |
 | 2026-11-26 | 3360 | [Stone Removal Game](2026-11-26-stone-removal-game.md) | Easy | Math, Simulation |
 | 2026-11-24 | 3411 | [Maximum Subarray With Equal Products](2026-11-24-maximum-subarray-with-equal-products.md) | Easy | Array, Math, Sliding Window, Enumeration, Number Theory |
 | 2026-11-22 | 2124 | [Check if All A's Appears Before All B's](2026-11-22-check-if-all-as-appears-before-all-bs.md) | Easy | String |
